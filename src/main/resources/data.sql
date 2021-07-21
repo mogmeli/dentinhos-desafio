@@ -1,0 +1,15 @@
+insert into dentists(address, birth_date, code_mp, dni, email, last_name, name, phone) values('endereco1', TO_DATE('01/08/2021', 'DD/MM/YYYY'), 'codigomp1', 'dni1', 'email1@email.com', 'gaucho', 'ronaldo', '1199839-3333');
+insert into dentists(address, birth_date, code_mp, dni, email, last_name, name, phone) values('endereco2', TO_DATE('02/08/2021', 'DD/MM/YYYY'), 'codigomp2', 'dni2', 'email2@email.com', 'santos', 'neymar', '1194584-3333');
+insert into dentists(address, birth_date, code_mp, dni, email, last_name, name, phone) values('endereco3', TO_DATE('03/08/2021', 'DD/MM/YYYY'), 'codigomp3', 'dni3', 'email3@email.com', 'ceni', 'rogerio', '1192384-3333');
+insert into diarys(ending_time, start_time, dentist_id_dentist) values(TO_DATE('01/10/2021', 'DD/MM/YYYY'), TO_DATE('10/10/2021', 'DD/MM/YYYY'), 1);
+insert into diarys(ending_time, start_time, dentist_id_dentist) values(TO_DATE('09/09/2020', 'DD/MM/YYYY'), TO_DATE('10/10/2021', 'DD/MM/YYYY'), 2);
+insert into diarys(ending_time, start_time, dentist_id_dentist) values(TO_DATE('06/06/2021', 'DD/MM/YYYY'), TO_DATE('10/10/2021', 'DD/MM/YYYY'), 3);
+insert into patients(address, birth_date, dni, email, last_name, name, phone) values('endereco1', TO_DATE('03/06/2021', 'DD/MM/YYYY'), 'dni1', 'email1@email.com', 'paciente', 'romero','telefone1');
+insert into patients(address, birth_date, dni, email, last_name, name, phone) values('endereco2', TO_DATE('12/06/2021', 'DD/MM/YYYY'), 'dni2', 'email2@email.com', 'paciente', 'jeniffer','telefone2');
+insert into patients(address, birth_date, dni, email, last_name, name, phone) values('endereco3', TO_DATE('10/06/2021', 'DD/MM/YYYY'), 'dni3', 'email3@email.com', 'paciente', 'marcos','telefone3');
+insert into turn_status(description, name) values('status pendente do cara', 'pendente');
+insert into turn_status(description, name) values('status finalizado do cara', 'finalizado');
+insert into turn_status(description, name) values('status remarcado do cara', 'remarcado');
+insert into turns(day, diary_id_diary, patient_id_patient, turn_status_id_turn_status) values(TO_DATE('03/06/2021', 'DD/MM/YYYY'), 1, 1, 1);
+insert into turns(day, diary_id_diary, patient_id_patient, turn_status_id_turn_status) values(TO_DATE('10/12/2021', 'DD/MM/YYYY'), 2, 2, 2);
+insert into turns(day, diary_id_diary, patient_id_patient, turn_status_id_turn_status) values(TO_DATE('08/12/2021', 'DD/MM/YYYY'), 3, 3, 3);
